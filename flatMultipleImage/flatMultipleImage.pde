@@ -55,6 +55,8 @@ pic1WidthAdjusted = pic1Width * imageWidthRatioPic1;
 pic1HeightAdjusted = pic1Height *  imageHeightRatioPic1;
 pic2WidthAdjusted = pic2Width *  imageWidthRatioPic2;
 pic2HeightAdjusted = pic2Height *  imageHeightRatioPic2;
+println(pic1Width, pic1Height, pic2Width, pic2Height);
+println(pic1WidthAdjusted, pic1HeightAdjusted, pic2WidthAdjusted, pic2HeightAdjusted);
 //
 rectXPic1 = displayWidth*1/4;
 rectYPic1 = displayHeight*0;
