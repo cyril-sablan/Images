@@ -50,10 +50,11 @@ if( widthPic2Larger == true)  imageHeightRatioPic2 = float (smallerPic1Dimension
 if( heightPic2Larger == true) imageWidthRatioPic2 =  float (smallerPic2Dimension) / float (largerPic2Dimension);
 if( heightPic2Larger == true) imageHeightRatioPic2 = float (largerPic2Dimension) / float (largerPic2Dimension);
 println(imageWidthRatioPic1, imageHeightRatioPic1, imageWidthRatioPic2, imageHeightRatioPic2 ); //Verifying Variable Detials (Ratios)
-float pic1WidthAdjusted = pic1Width;
-float pic1HeightAdjusted = pic1Height;
-float pic2WidthAdjusted = pic2Width;
-float pic2HeightAdjusted = pic2Height;
+float pic1WidthAdjusted, pic1HeightAdjusted, pic2WidthAdjusted, pic2HeightAdjusted;
+pic1WidthAdjusted = pic1Width * imageWidthRatioPic1;
+pic1HeightAdjusted = pic1Height *  imageHeightRatioPic1;
+pic2WidthAdjusted = pic2Width *  imageWidthRatioPic2;
+pic2HeightAdjusted = pic2Height *  imageHeightRatioPic2;
 //
 rectXPic1 = displayWidth*1/4;
 rectYPic1 = displayHeight*0;
