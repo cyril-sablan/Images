@@ -1,21 +1,39 @@
 //Global Variables
+float rectXPic1, rectYPic1, rectWidthPic1, rectHeightPic1;
+float rectXPic2, rectYPic2, rectWidthPic2, rectHeightPic2;
+PImage pic1, pic2;
+float imageWidthRatioPic1=0.0, imageHeightRatioPic1=0.0, imageWidthRatioPic2=0.0, imageHeightRatioPic2=0.0; 
+Boolean widthPic1Larger=false, heightPic1Larger=false, widthPic2Larger=false, heightPic2Larger=false; 
+int largerPic1Dimension, smallerPic1Dimension, largerPic2Dimension, smallerPic2Dimension;
+float pic1WidthAdjusted, pic1HeightAdjusted, pic2WidthAdjusted, pic2HeightAdjusted;
+color red=#FF0000;
 //
-void setup() {}//End setup
+void setup() 
+{
+
+}//End setup
 //
-void draw() {}//End draw
+void draw() 
+{
+
+}//End draw
 //
-void keyPressed() {}//End keyPressed
+void keyPressed() 
+{
+  
+}//End keyPressed
 //
-void mousePressed() {}//End mousePressed
+void mousePressed() 
+{
+  
+}//End mousePressed
 
 
 
 
 /*
 //Variables
-float rectXPic1, rectYPic1, rectWidthPic1, rectHeightPic1;
-float rectXPic2, rectYPic2, rectWidthPic2, rectHeightPic2;
-PImage pic1, pic2;
+
 //
 //Geomertry
 fullScreen(); //size(900, 600);
@@ -26,13 +44,7 @@ pic1 = loadImage("rock face off.jpg"); // Dimensions: fullScreen (840 width  497
 pic2 = loadImage("LETS GO BREACH.png"); //Dimensions: fullScreen (587 width,  900 height)
 //
 //Aspect Ratio Calculations
-int pic1Width = 840;
-int pic1Height = 497;
-int pic2Width = 587;
-int pic2Height = 900;
-int largerPic1Dimension, smallerPic1Dimension, largerPic2Dimension, smallerPic2Dimension;
-float imageWidthRatioPic1=0.0, imageHeightRatioPic1=0.0, imageWidthRatioPic2=0.0, imageHeightRatioPic2=0.0; 
-Boolean widthPic1Larger=false, heightPic1Larger=false, widthPic2Larger=false, heightPic2Larger=false; 
+
 //
 if (pic1Width >= pic1Height) { //ID Larger Dimension: Landscape and Square
   largerPic1Dimension = pic1Width;
@@ -75,6 +87,10 @@ rectWidthPic2 = displayWidth*6/8;
 rectHeightPic2 = displayHeight*1/2;
 //
 //Final Aspect Ratio Calculations
+int pic1Width = 840;
+int pic1Height = 497;
+int pic2Width = 587;
+int pic2Height = 900;
 float pic1WidthAdjusted, pic1HeightAdjusted, pic2WidthAdjusted, pic2HeightAdjusted;
 pic1WidthAdjusted = rectWidthPic1 * imageWidthRatioPic1;
 pic1HeightAdjusted = rectHeightPic1 *  imageHeightRatioPic1;
