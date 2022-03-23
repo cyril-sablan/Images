@@ -50,13 +50,6 @@ if( widthPic2Larger == true)  imageHeightRatioPic2 = float (smallerPic1Dimension
 if( heightPic2Larger == true) imageWidthRatioPic2 =  float (smallerPic2Dimension) / float (largerPic2Dimension);
 if( heightPic2Larger == true) imageHeightRatioPic2 = float (largerPic2Dimension) / float (largerPic2Dimension);
 println(imageWidthRatioPic1, imageHeightRatioPic1, imageWidthRatioPic2, imageHeightRatioPic2 ); //Verifying Variable Detials (Ratios)
-float pic1WidthAdjusted, pic1HeightAdjusted, pic2WidthAdjusted, pic2HeightAdjusted;
-pic1WidthAdjusted = pic1Width * imageWidthRatioPic1;
-pic1HeightAdjusted = pic1Height *  imageHeightRatioPic1;
-pic2WidthAdjusted = pic2Width *  imageWidthRatioPic2;
-pic2HeightAdjusted = pic2Height *  imageHeightRatioPic2;
-println(pic1Width, pic1Height, pic2Width, pic2Height);
-println(pic1WidthAdjusted, pic1HeightAdjusted, pic2WidthAdjusted, pic2HeightAdjusted);
 //
 rectXPic1 = displayWidth*1/4;
 rectYPic1 = displayHeight*0;
@@ -67,8 +60,22 @@ rectYPic2 = displayHeight*1/2;
 rectWidthPic2 = displayWidth*6/8; 
 rectHeightPic2 = displayHeight*1/2;
 //
+//Final Aspect Ratio Calculations
+float pic1WidthAdjusted, pic1HeightAdjusted, pic2WidthAdjusted, pic2HeightAdjusted;
+pic1WidthAdjusted = rectWidthPic1 * imageWidthRatioPic1;
+pic1HeightAdjusted = rectHeightPic1 *  imageHeightRatioPic1;
+pic2WidthAdjusted = rectWidthPic2 *  imageWidthRatioPic2;
+pic2HeightAdjusted = rectHeightPic2 *  imageHeightRatioPic2;
+println(pic1Width, pic1Height, pic2Width, pic2Height);
+println(pic1WidthAdjusted, pic1HeightAdjusted, pic2WidthAdjusted, pic2HeightAdjusted);
 //Rectangle Layout & Image Printing on Canvas 
-rect(rectXPic1, rectYPic1, rectWidthPic1, rectHeightPic1); //Image 1, landscape presentation
-rect(rectXPic2, rectYPic2, rectWidthPic2, rectHeightPic2); //Image 2, landscape presentation
+//rect(rectXPic1, rectYPic1, rectWidthPic1, rectHeightPic1); //Image 1, landscape presentation
+//rect(rectXPic2, rectYPic2, rectWidthPic2, rectHeightPic2); //Image 2, landscape presentation
+// Image using Rect() Variables
 image(pic1, rectXPic1, rectYPic1, rectWidthPic1, rectHeightPic1);
 image(pic2, rectXPic2, rectYPic2, rectWidthPic2, rectHeightPic2);
+//image(pic1, rectXPic1, rectYPic1, pic1WidthAdjusted, pic1HeightAdjusted);
+//image(pic2, rectXPic2, rectYPic2, pic2WidthAdjusted, pic2HeightAdjusted);
+println("Image one looks good, put some text underneath to fill in the space."); //Great Desogm Change for Aspect Ratio
+//Center Image in rect(), pic2
+//image(pic2, rectXPic2, rectYPic2+(rectYPic2*1/5), pic2WidthAdjusted, pic2HeightAdjusted);
