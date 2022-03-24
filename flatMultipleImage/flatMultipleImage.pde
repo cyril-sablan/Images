@@ -8,8 +8,8 @@ fullScreen(); //size(900, 600);
 //Landscape Presentation, not square or portrait 
 //
 //Populating Variables
-pic1 = loadImage("rock face off.jpg"); // Dimensions: fullScreen (840 width  497 height)
-pic2 = loadImage("LETS GO BREACH.png"); //Dimensions: fullScreen (587 width,  900 height)
+pic1 = loadImage("rock face off.jpg"); // Dimensions:  840 width  497 height
+pic2 = loadImage("LETS GO BREACH.png"); //Dimensions:  587 width,  900 height
 //
 //Aspect Ratio Calculations
 int pic1Width = 840;
